@@ -76,9 +76,9 @@ Host *
 ```
 
 ## Development
-Run container with parameters `-it  --entrypoint=/bin/sh`:
+Run container with parameters `--entrypoint=/bin/sh`:
 ```bash
-docker run -it  --entrypoint=/bin/sh \
+docker run --entrypoint=/bin/sh \
 -e REPO_URL=git@github.com:yuri-karpovich/test.git \
 -e REPO_DIR_NAME=test \
 -e INTERVAL=600 \
