@@ -8,6 +8,12 @@ NEW_SSH_PATH=/root/new_ssh
 
 if [ -d "$SSH_PATH" ]
 then
+  if [ ! -d "$SSH_PATH/id_rsa" ]
+  then
+    echo "Cannot find $SSH_PATH/id_rsa"
+    exit 1
+  fi
+
     echo "Copying keys from $SSH_PATH to $NEW_SSH_PATH"
     rm -rf $NEW_SSH_PATH
     cp -R $SSH_PATH $NEW_SSH_PATH
