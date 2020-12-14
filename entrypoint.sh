@@ -15,7 +15,7 @@ fi
 
 if [ -d "$SSH_PATH" ]
 then
-  if [ ! -d "$SSH_PATH/id_rsa" ]
+  if [ ! -f "$SSH_PATH/id_rsa" ]
   then
     echo "Cannot find $SSH_PATH/id_rsa"
     exit 1
