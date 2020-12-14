@@ -6,8 +6,12 @@ REPO_PATH="$WORK_PATH/$REPO_DIR_NAME"
 SSH_PATH=/root/ssh
 NEW_SSH_PATH=/root/new_ssh
 
-echo "Wait 20 seconds"
-sleep 20
+if [ -z "$FIRST_PULL_INTERVAL" ]
+then
+  echo "Wait $FIRST_PULL_INTERVAL seconds"
+  sleep "$FIRST_PULL_INTERVAL"
+fi
+
 
 if [ -d "$SSH_PATH" ]
 then

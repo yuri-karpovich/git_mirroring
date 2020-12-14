@@ -75,6 +75,10 @@ Host *
    UserKnownHostsFile=/dev/null
 ```
 
+## Tricks
+### Add sleep before first pull
+Set env `FIRST_PULL_INTERVAL` in seconds
+
 ## Development
 Run container with parameters `--entrypoint=/bin/sh`:
 ```bash
