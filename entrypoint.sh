@@ -6,7 +6,7 @@ REPO_PATH="$WORK_PATH/$REPO_DIR_NAME"
 SSH_PATH=/root/ssh
 NEW_SSH_PATH=/root/new_ssh
 
-if [ -z "$FIRST_PULL_INTERVAL" ]
+if [[ -z "${FIRST_PULL_INTERVAL}" ]]
 then
   echo "Wait $FIRST_PULL_INTERVAL seconds"
   sleep "$FIRST_PULL_INTERVAL"
