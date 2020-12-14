@@ -6,6 +6,9 @@ REPO_PATH="$WORK_PATH/$REPO_DIR_NAME"
 SSH_PATH=/root/ssh
 NEW_SSH_PATH=/root/new_ssh
 
+echo "Wait 20 seconds"
+sleep 20
+
 if [ -d "$SSH_PATH" ]
 then
   if [ ! -d "$SSH_PATH/id_rsa" ]
