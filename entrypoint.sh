@@ -29,7 +29,7 @@ then
     chmod 600 -R $NEW_SSH_PATH
     echo "Enabling ssh-agent"
     eval `ssh-agent -s`
-    ssh-add "$NEW_SSH_PATH/id"
+    ssh-add "$NEW_SSH_PATH/id_rsa"
 else
     echo "SSH file was not found"
 fi
