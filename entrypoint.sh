@@ -24,6 +24,7 @@ then
     echo "Copying keys from $SSH_PATH to $NEW_SSH_PATH"
     rm -rf $NEW_SSH_PATH
     cp -R $SSH_PATH $NEW_SSH_PATH
+    echo $(ls $NEW_SSH_PATH)
     echo "Setting 600 permissions mode for $NEW_SSH_PATH"
     chmod 600 -R $NEW_SSH_PATH
     echo "Enabling ssh-agent"
